@@ -12,7 +12,7 @@ Nowadays, believing in the forwarded news on social platforms can lead to misund
  
 # Usefulness
  
-        	The system that we are suggesting will focus on news that is available through social media and will help user in finding the authenticity of the news once our system characterizes the same and puts it into our defined characterized buckets. Also, we will be recommending the user the relevant news that is from verified sources. In recent times most of the content consumed by user is through online media specially smartphones as it's free and easily accessible hence there are higher chances of users consuming news that is not verified and the same becomes truth for individuals. This could be avoided by using such a system where a user always has a system he could validate the news and be aware of the actual truth.
+The system that we are suggesting will focus on news that is available through social media and will help user in finding the authenticity of the news once our system characterizes the same and puts it into our defined characterized buckets. Also, we will be recommending the user the relevant news that is from verified sources. In recent times most of the content consumed by user is through online media specially smartphones as it's free and easily accessible hence there are higher chances of users consuming news that is not verified and the same becomes truth for individuals. This could be avoided by using such a system where a user always has a system he could validate the news and be aware of the actual truth.
  
 
 # Plan & Dataset
