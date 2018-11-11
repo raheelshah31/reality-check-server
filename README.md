@@ -22,7 +22,7 @@ The system that we are suggesting will focus on news that is available through s
 # Plan & Dataset
  
  Text classification model such as Vector Space Model and using a modified version of KNN classification in this project to compare news and check for reliability.Have divided the training set into 80% for training and 20 for testing.
-Dataset will be using is downloaded from Kaggle and the link for the same is given below. 
+Dataset is downloaded from Kaggle and the link for the same is given below. 
 
 https://www.kaggle.com/c/fake-news/data
  
