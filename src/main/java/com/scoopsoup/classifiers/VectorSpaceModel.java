@@ -1,18 +1,19 @@
 package com.scoopsoup.classifiers;
 
+import com.scoopsoup.model.Doc;
 import com.scoopsoup.parser.Parser;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
 
 public class VectorSpaceModel {
-    HashMap<Integer, String> myDocs;
-    ArrayList<String> termList;
-    ArrayList<ArrayList<Doc>> docLists;
-    double[] docLength;
-    int[] docClass;
-    double[] classCentroid;
-    Set<String> docStopWords;
+    public static HashMap<Integer, String> myDocs;
+    public static ArrayList<String> termList;
+    public static ArrayList<ArrayList<Doc>> docLists;
+    public static double[] docLength;
+    public static  int[] docClass;
+    public static  double[] classCentroid;
+    public static  Set<String> docStopWords;
 
     /**
      * Construct an inverted index
@@ -232,28 +233,9 @@ public class VectorSpaceModel {
     public static void main(String[] args) {
         Parser docParser = new Parser("classpath:train.csv", "classpath:stopwords.txt");
         VectorSpaceModel vsm = new VectorSpaceModel(docParser.myDocsContentMap, docParser.stopWords, docParser.trainLabels);
-        vsm.printTestStats(docParser.myDocsTestContentMap);
+       // vsm.printTestStats(docParser.myDocsTestContentMap);
     }
 
 }
 
-/**
- * @author qyuvks
- * Document id class that contains the document id and the term weight in tf-idf
- */
-class Doc {
-    int docId;
-    double tw;
 
-
-    public Doc(int did, double weight) {
-        docId = did;
-        tw = weight;
-    }
-
-
-    public String toString() {
-        String docIdString = docId + ":" + tw;
-        return docIdString;
-    }
-}

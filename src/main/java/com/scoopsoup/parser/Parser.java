@@ -100,14 +100,14 @@ public class Parser {
             index++;
         }
         System.out.println("Starting Testing Data" + index);
-        while (it.hasNext() && index < 10000) { // 20% used for testData
-            String[] row = it.next();
-            //System.out.println(row[0]);
-            myDocsTestContentMap.put(index, row[3].toLowerCase()); //case Folding
-            myDocsFileNameReferenceMap.put(index, row[1]);
-            trainLabels[index] = Integer.parseInt(row[4]);
-            index++;
-        }
+//        while (it.hasNext() && index < 2000) { // 20% used for testData
+//            String[] row = it.next();
+//            //System.out.println(row[0]);
+//            myDocsTestContentMap.put(index, row[3].toLowerCase()); //case Folding
+//            myDocsFileNameReferenceMap.put(index, row[1]);
+//            trainLabels[index] = Integer.parseInt(row[4]);
+//            index++;
+//        }
         System.out.println("Total Data " + index);
     }
 
